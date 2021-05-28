@@ -1,0 +1,245 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 28, 2020, 6:35:43 PM
+    Author     : ASUS
+*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+/*Navbar*/
+
+li, a{
+	font-weight: 500;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	padding: 0 10%;
+}
+
+.nav_link li {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li a {
+	color: #707070;
+}
+
+.style::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: black;
+	transition: width .3s;
+}
+
+.style:hover::after {
+	width: 100%;
+	transition: width .3s;
+}
+
+.logo {
+	color: #707070;
+	text-transform: uppercase;
+}
+
+.red-btn {
+	background-color: red;
+	display: block;
+	color: white;
+	padding: 30px;
+}
+.background {
+	height: 753px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../Images/perpus.jpg");
+	background-size: cover
+}
+
+/*Home*/
+
+h2{
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.slider { 
+	/*border: 10px solid #efefef; */
+	position: relative; 
+	overflow: hidden; 
+	background: #efefef;
+}
+ 
+.slider { 
+	margin:20px auto;
+	width: 800px;
+	height: 600px; 
+	background:transparent;
+}
+ 
+.isi-slider div { 
+	width: 800px;
+	height: 600px; 
+	float: left;
+}
+ 
+.isi-slider { 
+	position: absolute; 
+	width:3200px;  
+	animation-name:slider;
+	animation-duration:16s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:infinite;
+}
+.isi-slider:hover { 
+	animation-play-state:paused; }
+
+ 
+.isi-slider div { 
+	float: right; 
+}
+.quote1{
+ 	display: flex;
+ 	flex-direction: column;
+
+ 	/*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('party.jpg');*/
+ 	/*background-size: cover;*/
+ 	color: white;
+ }
+.quote1 h2 ,p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	flex-direction: column;
+}
+.quote2{
+ 	display: flex;
+ 	flex-direction: column;
+
+ 	/*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('tes.jpg');*/
+ 	/*background-size: cover;*/
+ 	color: white;
+ }
+.quote2 h2 ,p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	flex-direction: column;
+}
+.quote3{
+ 	display: flex;
+ 	flex-direction: column;
+
+ 	/*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('library.jpg');*/
+ 	/*background-size: cover;*/
+ 	color: white;
+ }
+.quote3 h2 ,p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	flex-direction: column;
+}
+.quote4{
+ 	display: flex;
+ 	flex-direction: column;
+
+ 	/*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('iseng/cewek.jpg');*/
+ 	/*background-size: cover;*/
+ 	color: white;
+ }
+.quote4 h2 ,p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	flex-direction: column;
+}
+.slider:after { 
+	font-size: 150px; 
+	position: absolute; 
+	z-index: 12; 
+	color: rgba(255,255,255, 0); 
+	left: 300px; top: 80px; 
+	transition: 1s all ease-in-out; 
+}
+ 
+.slider:hover:after { 
+	/*color: rgba(255,255,255, 0.6);  */
+}
+ 
+@keyframes slider {     
+	0% {
+        left: 0; opacity: 0; 
+    }     
+    2% {
+        opacity: 1; 
+    }     
+    20% {
+        left: 0; opacity: 1; 
+    }     
+    21% {
+        opacity: 0; 
+    }     
+    24% {
+        opacity: 0; 
+    }     
+    25% {
+        left: -800px; opacity: 1; 
+    }       
+    45% {
+        left: -800px; opacity: 1; 
+    }     
+    46% {
+        opacity: 0; 
+    }     
+    48% {
+        opacity: 0; 
+    }     
+    50% {
+        left: -1600px; opacity: 1; 
+    }     
+    70% {
+        left: -1600px; opacity: 1; 
+    }     
+    72% {
+        opacity: 0; 
+    }     
+    74% {
+        opacity: 0; 
+    }    
+    75% {
+        left: -2400px; opacity: 1; 
+    }       
+    95% {
+        left: -2400px; opacity: 1; 
+    }       
+    97% { 
+        left: -2400px; opacity: 0;
+    }       
+    100% {
+        left: 0; opacity: 0; 
+    }
+}

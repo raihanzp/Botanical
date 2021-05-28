@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+/*Navbar*/
+
+li, a{
+	font-weight: 500;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	padding: 0 10%;
+}
+
+.nav_link li {
+	display: inline-block;
+	padding: 0 30px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li a {
+	color: #707070;
+}
+
+.style::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: black;
+	transition: width .3s;
+}
+
+.style:hover::after {
+	width: 100%;
+	transition: width .3s;
+}
+
+.logo {
+	color: #707070;
+	text-transform: uppercase;
+}
+
+.red-btn {
+	background-color: red;
+	display: block;
+	color: white;
+	padding: 30px;
+}
+
+
+/*Home*/
+
+section.home-container {
+	margin: 5% auto;
+	width: 25%;
+	height: 40vh;
+}
+div.home-text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: grey;
+}
+
+.home-text h1 {
+	padding: 5px;
+	font-size: 2.2em;
+}
+
+.home-text h3 {
+	font-size: 1.2em;
+	padding: 5px;
+}
+
+.service-content {
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;
+
+}
+
+.service-content li {
+	border: 1px solid #707070;
+	padding: 30px;
+}
+
+.service-content li:hover {
+	transition: all .3s;  
+	border-color: black;
+}
+
+.service-content li h4 {
+	padding-top: 10px;
+	color: #707070;
+}

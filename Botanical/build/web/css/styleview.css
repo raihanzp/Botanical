@@ -1,0 +1,118 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+        overflow-y: hidden;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: 2.5fr 0.5fr;
+	grid-template-areas: 
+	'header user'
+	'tabel user'
+        'footer user';
+}
+
+/*header*/
+.logo {
+    grid-area: header;	
+    margin: 30px;	
+    padding-bottom: 20px;	
+    border-bottom: 1px solid black;
+}
+
+/*tabel*/
+.tabel {
+    grid-area: tabel;
+    height: 550px;
+}
+
+.pertablean {
+    text-align: center;
+    height: 500px; 
+    overflow: auto;
+    width: 90%;
+    margin: auto;
+}
+
+thead th {
+    padding: 5px;
+}
+
+.cari {
+	margin: 0 70px 20px 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.cari input {
+	border: 0;
+	background: none;
+	border: 2px solid gray;
+	outline: none;
+	border-radius: 15px;
+	padding: 3px 10px;
+}
+
+.cari input[type=submit] {
+	color: black;
+	margin-left: 15px;
+        padding: 5px 10px;
+        cursor: pointer;
+}
+
+td {
+    padding: 10px;
+}
+
+tr td a {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 3px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+tr td a:hover {
+    background-color: black;
+    color: white;
+}
+
+/*user*/
+
+.user {
+	grid-area: user;
+	background-color: red;
+	display: flex;
+	align-items: center;
+        height: 100vh;
+        flex-direction: column;
+}
+.user a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+.user .kata {
+	margin-top: 540px;
+	display: flex;
+	flex-direction: column;
+}
+.kata a{
+	text-decoration: none;
+	color: white;
+}
+
+.user img {
+	margin: 40px auto 30px auto;
+}
+
+/* footer */
+.footer {
+    margin: 50px;
+}
+.footer a{
+    text-decoration: none;
+}
+
+
